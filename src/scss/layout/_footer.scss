@@ -1,0 +1,117 @@
+.page__footer {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-grey-blue;
+  color: $white;
+
+  @media all and (min-width: 768px) {
+    padding: 0 40px 45px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 0 370px 45px;
+  }
+}
+.footer__button {
+  background-color: $white;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  transform: translate(0, -50%);
+  animation: up-down-2 0.5s infinite ease-in alternate;
+}
+
+@keyframes up-down-2 {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(-70%);
+  }
+}
+
+.footer__button--icon {
+  vertical-align: middle;
+}
+.footer-flex {
+  @media all and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer-nav1 {
+  margin-top: 15px;
+  @media all and (min-width: 768px) {
+    margin: 0 30px 0 0;
+    width: 210px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 161px;
+  }
+}
+.footer-nav1__list {
+  list-style: none;
+  text-align: center;
+}
+.footer-nav1__list--link {
+  text-decoration: none;
+  color: $white;
+  font-family: $font-text;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.footer-nav2 {
+  margin-top: 30px;
+  @media all and (min-width: 768px) {
+    width: 210px;
+    margin: 0;
+  }
+  @media all and (min-width: 1200px) {
+    width: 161px;
+  }
+}
+.footer-nav2__list {
+  list-style: none;
+  text-align: center;
+}
+.footer-nav2__list--link {
+  text-decoration: none;
+  color: $white;
+  font-family: $font-text;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer__copy {
+  margin: 30px 0 45px;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
+    order: -1;
+    margin: 0 30px 0 0;
+    width: 210px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 161px;
+  }
+}
+.footer__copy--copy {
+  font-family: $font-text;
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer__copy--slogan {
+  text-transform: lowercase;
+}
+.footer__heart {
+  color: $orange;
+}
